@@ -1,7 +1,7 @@
 #proves Collatz Conjecture for given range of numbers
 
 #enter amount of numbers
-RANGE = 2
+RANGE = 10
 
 def Collatz_Conjecture(n):
     while n != 1:
@@ -28,4 +28,5 @@ if __name__ == "__main__":
     for n in range(1, RANGE):
         print("works on number: " + str(n))
         Collatz_Conjecture(n)
+        print("path: " + Collatz_Conjecture_Path(n))
     print("ended")
